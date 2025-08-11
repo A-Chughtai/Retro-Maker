@@ -1,3 +1,5 @@
 *
 !.gitignore
 !retro.py
+!README.md
+!requirements.txt
