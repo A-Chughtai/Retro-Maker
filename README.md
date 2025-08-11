@@ -18,8 +18,8 @@ This Python project uses Google's Gemini model (via LangChain) and MCP servers t
 ### 1. Clone the Repository
 
 ```powershell
-git clone https://github.com/A-Chughtai/Retro-Maker.git
-cd A-Chughtai
+git clone https://github.com/A-Chughtai/Retro-Maker
+cd Retro-Maker
 ```
 
 ### 2. Make a Virtual Environment
@@ -30,19 +30,21 @@ cd A-Chughtai
 
 ```
 python -m venv venv
-venv\Scripts\activate
+.\venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
 ### 3. Create a .env file and add Your variables
 ```
-GEMINI_API_KEY=your api key
-GITHUB_PERSONAL_ACCESS_TOKEN=your classic personal access tokens (get from developer settings)
+GEMINI_API_KEY=your api key (get from GOOGLE AI STUDIO)
+GITHUB_PERSONAL_ACCESS_TOKEN=your classic personal access tokens (get from developer settings and check all the boxes before generating the token except for those that explicitly state that they give delete permissions)
 ```
 
 ### 4. Run code and get you daily Retro
 
-YOU HAVE TO RUN THE CODE WITH YOUR **GITHUB USERNAME** AND FULL **REPONAME** an example is as following:
+* You have to run the code with your **GITHUB USERNAME** and full **REPOSITORY NAME** which contains the owner name seperated by a */* symbol. 
+* The format is as following ``` python retro.py USERNAME OWNER/REPONAME ```
+* An example is as following:
 
 ```
 python main.py A-Chughtai A-Chughtai/Retro-Maker
